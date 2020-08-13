@@ -1,0 +1,672 @@
+
+<!doctype html>
+<html lang="en"> 
+<head>
+	<meta charset="UTF-8">
+	<title> Rehab Notes</title>
+	<link rel="stylesheet" type="text/css" href="sty/style.css">
+	<link rel="stylesheet" type="text/css" href="sty/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="sty/woff2.css">
+	<link rel="stylesheet" type="text/css" href="sty/fontawesome-webfont.woff2">
+  <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+  <script>
+
+    function randomColor(brightness){
+  function randomChannel(brightness){
+    var r = 255-brightness;
+    var n = 0|((Math.random() * r) + brightness);
+    var s = n.toString(16);
+    return (s.length==1) ? '0'+s : s;
+   
+  }
+
+ 
+  return '#' + randomChannel(brightness) + randomChannel(brightness) + randomChannel(brightness);
+}
+    function changebackground(){
+    var element = document.getElementById('changeback');
+const styles = getComputedStyle(element)
+element.style.setProperty('--body-color' , randomColor(200)) ;
+}
+  </script>
+</head>
+<body id="changeback">
+  <div class="fixed" >
+   <span> R </span>
+  </div>
+  <header>
+    <h1> My HTML Notes</h1>
+    <h2>Rehab Galaa Mohamed Soliman</h2>
+  </header>
+  <section >
+
+<!-- <button id="btn-change" onclick="changebackground();">
+  change background
+</button> -->
+<div>
+<h1>  What is <abbr title="Hyper Text Markup Language">HTML </abbr>?</h1>
+<p>HTML stands for Hyper Text Markup Language
+<p>HTML is the standard markup language for creating Web pages
+<p>HTML describes the structure of a Web page
+<p>HTML consists of a series of elements
+<p>HTML elements tell the browser how to display the content
+<p>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+
+<h1>What is an HTML Element?</h1>
+<p>An HTML element is defined by a start tag, some content, and an end tag.</p>
+
+ <code>example <span class="tag">< </span><span class="tname"> tagname</span> <span class="tag"> >  </span> Content goes here... <span class="tag"> < / </span><span class="tname">tagname </span> <span class="tag"> >  </span> </code>
+
+</div>
+ <div>
+ <p>Whitespace includes spaces, tabs, and line breaks. When the browser displays an HTML file, it treats a run of whitespace as a single space character. <br> In order to create a line break that will show up in the browser, use <code> <span class="tag">< </span><span class="tname"> br </span> <span class="tag"> >  </span></code>.</p>
+
+<table class="table table-bordered ">
+<tbody><tr>
+<th>Start tag</th>
+<th>Element content</th>
+<th>End tag</th>
+</tr>
+<tr>
+<td>&lt;h1&gt;</td>
+<td>My First Heading</td>
+<td>&lt;/h1&gt;</td>
+</tr>
+<tr>
+<td>&lt;p&gt;</td>
+<td>My first paragraph.</td>
+<td>&lt;/p&gt;</td>
+</tr>
+<tr>
+<td>&lt;br&gt;</td>
+<td><em>none</em></td>
+<td><em>none</em></td>
+</tr>
+</tbody></table>
+
+<h1>Nested HTML Elements</h1>
+<p>HTML elements can be nested (this means that elements can contain other elements).</p>
+
+<p>All HTML documents consist of nested HTML elements.</p>
+
+<p>The following example contains four HTML elements (&lt;html&gt;, &lt;body&gt;, &lt;h1&gt; and &lt;p&gt;)</p>
+<p>I am a paragraph <span class="tags"> P </span></p>
+
+</div>
+<div>
+<p> Syntax is The grammar rules of a language.</p>
+
+
+<p> Nesting  is The idea that some bits of code can go inside other bits of code. </p>
+
+
+<p> Markup is Code that tells the browser what the text on a web page should look like. </p>
+
+
+<p> Hypertext is Text that can have links or references. </p>
+
+
+<p> White spaces is A general term for spaces, tabs, and line breaks. </p>
+</div>
+<div>
+ <p> To highlight  a word , I use <span class="tags"> mark </span>  text to be highlighted <span class="tags"> / mark </span>    like this <mark> My Notes </mark> , 
+ 	<span class="tags"> sub </span>  <span class="tags"> / sub </span>  tag is used to subscript <mark><sub> words</sub> </mark> 
+ 	while <span class="tags"> sup </span>  <span class="tags"> / sup </span>  tag is used to superscript <mark> <sup> words</sup> </mark> 
+ </p>
+ <p> Nesting rules checked and it is okay </p>
+<h2>Never Skip the End Tag</h2>
+<p>Some HTML elements will display correctly, even if you forget the end tag like  <span class="tags"> P </span> and  <span class="tags"> Li </span> </p>
+<p>However, never rely on this! Unexpected results and errors may occur if you forget the end tag!</p>
+</div>
+
+<div>
+<h1>Heading from h1 to h6  : </h1>
+<div class="mark-area">
+<h1> <span class="tags"> h1 </span> Content text  <span class="tags"> /h1 </span>  I am heading1 .</h1>
+<h2> <span class="tags"> h2 </span> Content text  <span class="tags"> /h2 </span>  I am heading2 .</h2>
+<h3> <span class="tags"> h3 </span> Content text  <span class="tags"> /h3 </span>  I am heading3 .</h3>
+<h4> <span class="tags"> h4 </span> Content text  <span class="tags"> /h4 </span>  I am heading4 .</h4>
+<h5> <span class="tags"> h5 </span> Content text  <span class="tags"> /h5 </span>  I am heading5 .</h5>
+<h6> <span class="tags"> h6 </span> Content text  <span class="tags"> /h6 </span>  I am heading6 .</h6>
+</div>
+
+<h2>My HTML Notes </h2>
+<p>This page is a collection of my awesome notes about HTML!</p>
+<h3>The Web </h3>
+<p>The Web (or World Wide Web) is a collection of documents and other files. Most of the documents are made using Hypertext Markup Language (HTML).</p>
+<h2>What is HTML? </h2>
+<p>HTML stands for Hypertext Markup Language. It's used to define the structure or layout of a web page. </p>
+
+<h2>My chemistry notes </h2>
+<p><strong>Molecule name:</strong> <em> Sulfur hexafluoride </em></p><p><strong>Molecular formula:</strong> C<sub>6</sub>H<sub>12</sub>O<sub>6</sub></p>
+<p><strong>Note:</strong> This gas has a much higher density than air. Basically the opposite of helium.<mark> Crazy! </mark></p>
+
+</div>
+<div>
+<h2>The div element 
+ <code><span class="tags">div</span>
+
+  <span class="tags"> /div </span> :
+  </code>
+</h2>
+<p>The <span class="tags">div</span> is short for division, because that's what this element is for—you can use it to divide up the page into different sections. </p>
+
+<p>Like the paragraph <span class="tags">p</span> element, the division <span class="tags">div</span> element has an invisible box around it—and just like <span class="tags">p</span>, it can have a border, a margin, a width, a height, and so on.</p>
+
+<p>But a <span class="tags">p</span> element is specifically meant to contain text. In contrast, the <span class="tags">div</span> element is a generic container for whatever other elements you might want to put inside. You can use the <span class="tags">div</span> element to organize the content and divide the page into sections.</p>
+<p>The <span class="tags">div</span> element is a super important one, and it's used a lot in HTML to help layout and organize pages.</p>
+</div>
+<code class="block-code"> <span class="tags">div</span><br>
+  <span class="tags">p</span>Call me Ismael.<span class="tags">/p</span><br>
+  <span class="tags">p</span>Just don't call me late for dinner.<span class="tags">/p</span><br>
+<span class="tags">/div</span> </code>
+
+<h1>HTML Block and Inline Elements</h1>
+<p>Every HTML element has a default display value, depending on what type of element it is.</p>
+
+<p>There are two display values: block and inline.</p>
+
+<h3>1- Block-level Elements</h3>
+
+<p>A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).</p>
+<p> <span class="sky-font bold"> Examples :</span> div , p , blockquote , h1 , h2 , section , li , ol , ul ,table , nav , header , footer , and etc  .
+<h3>1- Inline-level Elements</h3>
+<p>An inline element does not start on a new line and it only takes up as much width as necessary.</p>
+<p> <span class="sky-font bold"> Examples :</span> a , img , abbr , br , sub , sup , and etc . </p>
+<h1>HTML Attributes</h1>
+<ol class="ol-styled">
+  <li>All HTML elements can have attributes</li>
+	<li>Attributes provide additional information about elements</li>
+	<li>Attributes are always specified in the start tag</li>
+	<li>Attributes usually come in name/value pairs like: name="value" </li>
+	<li>Example : href , src , style , alt , etc.
+	</li>
+</ol>
+<h1> Lists </h1>
+<h3> ordered list (bullted list with numbers) </h3>
+<ol class="ol-styled">
+  <li>Learn HTML.</li>
+  <li>Learn CSS.</li>
+  <li>Learn Python.</li>
+  <li>Save the world.</li>
+</ol>
+
+<h3> unordered list (bullted list with bulltes)</h3>
+
+<ul class="ul-styled">
+  <li>Learn HTML.</li>
+  <li>Learn CSS.</li>
+  <li>Learn Python.</li>
+  <li>Save the world.</li>
+</ul>
+
+
+<p>
+<span class="tags">p</span>  and <span class="tags">li</span>  are the two elements you've seen with <mark> optional closing tags </mark>. <br>And the browser knows there has to be a closing tag when it gets to the start tag of a new element that can't be inside of the last one.<br>For example, when it gets to the start of a new <span class="tags">p</span>  element, it knows the previous <span class="tags">p</span>  element must be closed. <br>
+but  <span class="tags">em</span>  ,<span class="tags">mark</span>  , <span class="tags">strong</span>  ,<span class="tags">ol</span>  and <span class="tags">ul</span>  must have closing tag .
+
+</p>
+
+
+<div>
+ <h2> Nested lists</h2>
+	<ul class="ul-styled">
+  <li>Mammals
+    <ol class="ol-styled"> 
+      <li>Raccoons
+		<li>Gorillas
+    </ol>
+  <li>Reptiles
+     <ol class="ol-styled"> 
+      <li>Iguanas
+		<li>Cobras
+    </ol>
+  <li>Birds
+     <ol class="ol-styled"> 
+      <li>Ostriches
+		<li>Ravens
+    </ol>
+</ul>
+</div>
+
+<h1> Links </h1>
+<h2>HTML Links - Syntax</h2>
+<span class="tags">a href="url" </span>link text <span class="tags">/a</span>
+<p>The most important attribute of the <span class="tags"> a</span> element is the href attribute, which indicates the link's destination.</p>
+
+<p>The link text is the part that will be visible to the reader.</p>
+
+<p>Clicking on the link text, will send the reader to the specified URL address.</p>
+<p>Use the <span class="pink-font" >mailto:</span> scheme inside the<span class="sky-font" > href </span> attribute to create a link that opens the user's email program</p>
+<br>
+<h3>Examples</h3>
+<code class="block-code">
+<span class="tags"> a href="https://github.com/" </span> GitHub <span class="tags">/ a</span>
+<br>
+ <a href="https://github.com/" >  GitHub </a>
+<br>
+<span class="tags"> a  href="https://www.w3schools.com/" </span>
+<br> 
+w3schools <span class="tags">/ a</span>
+<br>
+<a  href="https://www.w3schools.com/"> w3schools </a>
+</code>
+
+<h2> HTML Links - The target Attribute</h2>
+<p>The target attribute specifies where to open the linked document.</p>
+
+<p>The target attribute can have one of the following values:</p>
+<ul class="ul-styled">
+<li> <span class="sky-font bold" > _self  </span> - Default. Opens the document in the same window/tab as it was clicked
+<li><span class="pink-font bold" > _blank </span>- Opens the document in a new window or tab
+<li><span class="sky-font bold" > _parent </span>- Opens the document in the parent frame
+<li> <span class="pink-font bold" >_top </span>- Opens the document in the full body of the window
+</ul>
+<div>
+<h1> Images </h1>
+<h2>HTML Images Syntax</h2>
+<h3> Image only </h3>
+<code><span class="tags">img src="url" alt="alternatetext"</span></code>
+<br>
+<br>
+<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"  alt="Google">
+
+<br>
+<h3> Image With link  </h3>
+<code> <span class="tags">a href="link url" </span><span class="tags">img src="image url" alt="alternatetext"</span> <span class="tags">/a</span></code>
+<br>
+<br>
+<a href="https://google.com"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google!"></a>
+
+<h2> Image With relative url /link  </h2>
+<img src="img/download.jpg"  alt="Library ">
+
+<h2> Exercixe on image , linked with ordered list </h2>
+<h3>
+  My favorite things:
+</h3>
+<ol class="ol-styled">
+  <li><a href="https://en.wikipedia.org/wiki/Bear" target="_blank">Bears</a>
+  <li><a href="https://en.wikipedia.org/wiki/Kitten" target="_blank">Kittens</a>
+</ol>
+<img src="https://placebear.com/150/150" alt="A picture of a bear.">
+<img src="https://placekitten.com/150/150" alt="A picture of a kitten.">
+<br><br>
+
+</div>
+<div>
+<h1> CSS styling </h1>
+<h2> 1- Inline style  </h2>
+<p> by using style attribute  like the example  </p>
+ <code>
+	
+	<span class="tags"> p style="color:red;"</span>
+	Make me red! <span class="tags"> /p</span>
+</code> 
+<br>
+<p style="color:red;">Make me red!</p>
+<p style="color:green;">Make me green!</p>
+<p style="color:blue;">Make me blue!</p>
+
+
+<h2>2- Internal style </h2>
+ by using a <span class="tags">style </span> element in the <span class="tags">head </span> section
+
+<h2>3- Related (External) style sheet</h2>
+
+<p>By linking the HTML document with CSS file/s like the example below .</p>
+<code>
+	
+	<span class="tags"> link rel="stylesheet" type="text/css" href="sty/style.css" </span>
+</code> 
+</style>
+<div>
+<h1> Cascading and specificity </h1>
+<p class="mark-area">The term "cascading" in Cascading Style Sheets refers to the way that style properties "cascade" down the DOM tree, starting at the top. A style applied to the body element will affect the entire document. A style applied to a lower-level element will affect that element and all its descendants.</p>
+
+<p>A style applied at a lower level can override a style at a higher level. For instance, if the body has <mark> color: red </mark>but a paragraph within the body has<mark> color: blue </mark>, the blue will apply to that paragraph and to any elements inside it </p>
+</div>
+
+
+<h1>
+  Containers  and floating
+</h1>
+
+  <div class="container">
+    <div class="box float-left red">I floated left</div>
+    <div class="box float-left green">I floated left </div>
+    <div class="box float-right yellow">I floated right </div>
+  </div>
+
+<div>
+	<h1>Flexbox</h1>
+
+<h2>Flexbox and flex-direction</h2>
+<p>The flex-direction property defines in which direction the container wants to stack the flex items.</p>
+<div> <h3> Row direction vs. Column direction</h3>
+<div class='flex half float-left bordered border-box'>
+      <div class="box red">red</div>
+    <div class="box green">green</div>
+    <div class="box yellow">yellow</div>
+  </div>
+  <div class='flex flex-cloumn half float-right bordered border-box'>
+      <div class="box red">red</div>
+    <div class="box green">green</div>
+    <div class="box yellow">yellow</div>
+  </div>
+</div>
+<h2>Flexbox and flex-wrap</h2>
+
+<p>
+  flex is used to make contaier or parents' childeren  to be displayed horozontally  with flexible resizing with device width varity uing <mark>   display:flex;</mark> .<br>
+  it can be achived by floating left also but it is more effecinet with resposive matters.
+</p>
+<p> if we need the childeren to be wrapped  with small width then we use <mark> flex-wrap:wrap; </mark> with <mark>  display:flex; </mark></p>
+<h2> Examples </h2>
+
+  <div class='flex'>
+      <div class="box red">red</div>
+    <div class="box green">green</div>
+    <div class="box yellow">yellow</div>
+  </div>
+
+  <div class='flex-wrap'>
+      <div class="box red">red</div>
+    <div class="box green">green</div>
+    <div class="box yellow">yellow</div>
+  </div>
+
+</div>
+
+<h2> Flex box example2</h2>
+    <div class='flex2'>
+      <div class="box2 red"></div>
+    <div class="box2 black"></div>
+    <div class="box2 black"></div>
+      <div class="box2 red"></div>
+  </div>
+
+<h2> Flex box example3 (spaces between using margin) - tic tac toe</h2>
+<ul class="tic-tac">
+  <li>X</li>
+  <li></li>
+  <li>O</li>
+  <li></li>
+  <li>X</li>
+  <li>O</li>
+  <li>X</li>
+  <li>O</li>
+  <li></li>
+</ul>
+
+<h2> Flex box example 4 (spaces between using justfy content and align content properties) - tic tac toe</h2>
+<ul class="tic-tac2">
+  <li>X</li>
+  <li></li>
+  <li>O</li>
+  <li></li>
+  <li>X</li>
+  <li>O</li>
+  <li>X</li>
+  <li>O</li>
+  <li></li>
+</ul>
+
+<div >
+	<h1>CSS Grid Layout</h1>
+	<p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.</p>
+<p>A grid layout consists of a parent element, with one or more child elements.</p>
+<h2> CSS Grid Exmaple </h2>
+<h3>HTML</h3>
+<code class="block-code">
+	 <span class="tags"> div class="grid-container" </span><br>
+   <span class="tags">div class="grid-item" </span>1 <span class="tags">/div </span><br>
+   <span class="tags">div class="grid-item" </span>2 <span class="tags">/div </span><br>
+  <span class="tags">div class="grid-item" </span>3<span class="tags">/div </span> <br>
+   <span class="tags">div class="grid-item" </span>4 <span class="tags">/div </span> <br>
+<span class="tags">div class="grid-item" </span>5 <span class="tags">/div </span> <br>
+   <span class="tags">div class="grid-item" </span>6 <span class="tags">/div </span> <br>
+  <span class="tags">div class="grid-item" </span>7 <span class="tags">/div </span> <br>
+   <span class="tags">div class="grid-item" </span>8 <span class="tags">/div </span> <br>
+  <span class="tags">div class="grid-item" </span>9 <span class="tags">/div </span> <br>
+ <span class="tags">/div</span>
+</code>
+<h3>CSS</h3>
+<code class="block-code">
+	<span class="sky-font">.grid-container </span>{<br>
+ <span class="green-font"> display:</span> grid;<br>
+  <span class="green-font">grid-template-columns:</span> auto auto auto;<br>
+  <span class="green-font">background-color:</span> #2196F3;<br>
+  <span class="green-font">padding:</span> 10px;<br>
+}<br>
+<span class="pink-font"> .grid-item </span> {<br>
+  <span class="green-font">background-color:</span> rgba(255, 255, 255, 0.8);<br>
+  <span class="green-font">border:</span> 1px solid rgba(0, 0, 0, 0.8);<br>
+  <span class="green-font">padding:</span> 20px;<br>
+  <span class="green-font">font-size:</span> 30px;<br>
+  <span class="green-font">text-align:</span> center;<br>
+}<br>
+
+</code>
+<div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>  
+  <div class="grid-item">4</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>  
+  <div class="grid-item">7</div>
+  <div class="grid-item">8</div>
+  <div class="grid-item">9</div>  
+</div>
+
+
+<h2> CSS Grid example  - tic tac toe</h2>
+<ul class="tic-tac-grid">
+  <li>X</li>
+  <li></li>
+  <li>O</li>
+  <li></li>
+  <li>X</li>
+  <li>O</li>
+  <li>X</li>
+  <li>O</li>
+  <li></li>
+</ul>
+
+<h2>CSS Grid Properties </h2>
+
+<p>You can  <span class="sky-font bold"> adjust the gap size </span> by using one of the following properties:</p>
+<code class="block-code">
+grid-column-gap<br>
+grid-row-gap <br>
+grid-gap <br>
+</code>
+
+<h3>Grid Lines</h3>
+<p>The lines between columns are called column lines.</p>
+<p>The lines between rows are called row lines. </p>
+<p>Refer to line numbers when placing a grid item in a grid container</p>
+<p class="pink-font bold"> It is working with <span class="sky-font bold">
+grid items properties </span> not the main grid container </p>
+<img src="img/grid_lines.png">
+
+<code class="block-code">
+<h3 class="no-text-shadow"> Examples </h3>
+	<span class="green-font bold">For Row level - the item will expand with column direction </span> <br>
+	<span class="pink-font">.item1 </span>{ <br>
+  grid-row-start: 1; <br>
+  grid-row-end: 3; <br>
+}
+<br>
+<br>
+<span class="green-font bold">For column level - the item will expand with row direction </span><br>
+<span class="sky-font"> .item2 </span> {<br>
+  grid-column-start: 1;<br>
+  grid-column-end: 3;<br>
+}
+</code>
+
+<h3>The grid-template-columns Property</h3>
+<p>It defines the number of columns in your grid layout, and it can define the width of each column.</p>
+
+<p>The value is a space-separated-list, where each value defines the width of the respective column.</p>
+
+<p>If you want your grid layout to contain 4 columns, specify the width of the 4 columns, or "auto" if all columns should have the same width.</p>
+<code class="block-code">
+<h3 class="no-text-shadow"> Examples </h3>
+<span class="green-font">auto column width sizes </span>
+	<span class="green-font bold">Make a grid with 4 columns: </span> <br>
+	<span class="pink-font">.grid-container </span>{ <br>
+  display: grid;<br>
+  grid-template-columns: auto auto auto auto;<br>
+  }
+<br>
+<span class="green-font">Specified column width sizes: 
+</span><br>
+<span class="sky-font">.grid-container2 </span>{ <br>
+  display: grid;<br>
+  grid-template-columns:80px 200px auto 40px;<br>
+  }
+<br></code>
+
+<h3>The grid-template-rows Property</h3>
+
+<p>It defines the height of each row.</p>
+<p>The value is a space-separated-list, where each value defines the height of the respective row</p>
+
+<code class="block-code">
+<h3 class="no-text-shadow"> Examples </h3>
+<span class="green-font">Specified Rows heights sizes </span> <br>
+	<span class="pink-font">.grid-container </span>{ <br>
+  display: grid;<br>
+   grid-template-rows: 80px 200px;<br>
+  }
+<br>
+<span class="green-font">Specified Rows heights sizes with auto height for last row: 
+</span><br>
+<span class="sky-font">.grid-container2 </span>{ <br>
+  display: grid;<br>
+    grid-template-rows: 80px 60px  auto;<br>
+  }
+<br></code>
+
+<h3>The justify-content Property</h3>
+<p>It is used to align the whole grid inside the container.</p>
+<code class="block-code">
+<h3 class="no-text-shadow"> Examples </h3>
+<span class="green-font">The value "space-evenly" will give the columns equal amount of space between, and around them </span> <br>
+	<span class="pink-font">.grid-container </span>{ <br>
+  display: grid;<br>
+    justify-content: space-evenly;<br>
+  }
+<br>
+<span class="green-font">The value "space-around" will give the columns equal amount of space around them
+</span><br>
+<span class="sky-font">.grid-container2 </span>{ <br>
+  display: grid;<br>
+   justify-content: space-around;<br>
+  }
+<br></code>
+
+<h3> The align-content Property</h3>
+<p> The align-content property is used to vertically align the whole grid inside the container.</p>
+<code class="block-code"> 
+	align-content: center; <br>
+	 align-content: space-evenly; </br>
+	align-content: space-around;</br>
+	align-content:  space-between;</br>
+	align-content:  start;</br>
+	align-content: end;</br>
+	</code>
+
+<h2>Child Elements (Items)</h2>
+<p>A grid container contains grid items.</p>
+
+<p>By default, a container has one grid item for each column, in each row,<span class="sky-font bold"> but you can style the grid items so that they will span multiple columns and/or rows.</span></p>
+<h3>The grid-column Property:</h3>
+<p>The grid-column property defines on which column(s) to place an item.</p>
+<p>You define where the item will start, and where the item will end.</p>
+<p>The grid-column property is a shorthand property for the <span class="sky-font bold"> grid-column-start </span> and the <span class="sky-font bold">grid-column-end </span> properties.</p>
+<h3>Example</h3>
+<img src="img/grid-column.PNG">
+<img src="img/grid-column_ex.PNG">
+
+<h3>The grid-row Property:</h3>
+<p> it works like grid-column property but affects the row spaning   </p>
+
+<h2>The grid-area Property</h2>
+<p>The grid-area property can be used as a shorthand property for <br><span class="sky-font bold">the grid-row-start </span> <br>
+	 <span class="pink-font bold"> grid-column-start </span><br>
+	  <span class="green-font bold">grid-row-end </span> <br>
+	   <span class="purple-font bold">grid-column-end </span> <br></p>
+
+	   <code class="block-code">
+	   	grid-container { <br>
+  display: grid; <br>
+  grid-template-columns: auto auto auto auto auto auto; <br>
+  grid-gap: 10px; <br>
+  background-color: #2196F3; <br>
+  padding: 10px; <br>
+} <br>
+
+.grid-container > div { <br>
+  background-color: rgba(255, 255, 255, 0.8); <br>
+  text-align: center; <br>
+  padding: 20px 0; <br>
+  font-size: 30px; <br>
+} <br>
+
+.item8 { <br>
+<span class="pink-font bold">  grid-area:</span> 1 / 2 / 5 / 6; <br>
+} </code>
+
+<img src="img/grid-area_ex.PNG">
+
+<h2>Naming Grid Items</h2>
+<p>You can use the grid-area property to name grid items.</p>
+
+<p>You can refer to the name when you set up the grid layout, by using the grid-template-areas property on the grid container.</p>
+
+<p>This grid layout contains six columns and three rows:</p>
+<h3>HTML Coding</h3>
+<img src="img/grid-area-html.PNG"> 
+<h3>CSS Coding</h3>
+<img src="img/grid-area-css.PNG">
+<h3>Output</h3>
+<img src="img/grid-area-naming.PNG"> <br>
+<h2>The Order of the Items</h2>
+<p>
+The Grid Layout allows us to position the items anywhere we like.</p>
+<img src="img/grid-order.PNG">
+
+
+<div ><div ><div ><h1>Advanced Grid Recap</h1>
+<p>The <code>fr</code> unit represents a fraction of the available space in the grid container.</p>
+<p>The <code>repeat()</code> notation can be used to quickly layout many tracks for large grids. For example:</p>
+<pre><code >grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+</code></pre>
+<p>Could be written with repeat notation like this:</p>
+<pre><code>grid-template-columns: repeat(7, 1fr);
+</code></pre>
+<p>The <code>grid-auto-rows</code> property can be used to generate the number of rows based on the content and available space. The following code:</p>
+<pre><code >grid-auto-rows: minmax(100px, auto);
+</code></pre>
+<p>Would create rows that are at least 100px tall and can be as tall as the content inside them demands.</p>
+</div></div><span></span></div>
+
+<h1>CSS Grid v. Flexbox</h1>
+<ul class="ul-styled">
+<li>Grid is two dimensional, while Flex is one</li>
+<li>Grid is layout first, while Flexbox is content first</li>
+<li>Flex is for components of an app, Grid is for the app layout itself</li>
+<li>Flexbox is made for one dimensional layouts and Grid is made for two dimensional layouts.</li>
+</ul>
+</div>
+<div>
+  <p>CSS Grid does not replace Flexbox. Each can achieve things that the other is not capable of, and in fact, a true master can use Flexbox and CSS Grid together in harmony to create the ultimate webpage layout.</p>
+<p>At the highest level CSS Grid excels at creating layouts for a webpage, while Flexbox is a master of content flow for each element that makes up the page layout.</p>
+</div>
+</section>
+</body></html>
