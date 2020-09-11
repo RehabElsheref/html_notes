@@ -487,3 +487,23 @@ float:left;
     text-decoration: none;
     color: var(--pink-color);
   }
+
+footer{
+      background-color: #000;
+      color:#fff;
+      text-align: center;
+    /* border: 2px solid var(--pink-color); */
+    box-shadow: -1px 0px 4px 3px #fff;
+    width: 80%;
+    margin: 30px auto 30px;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
+footer p{
+  font-family: 'times new roman';
+     color: #fff; 
+    font-size: 1.2em;
+    padding: 10px;
+    background-color: #000;
+}
